@@ -2,6 +2,7 @@ from langchain.document_loaders import PyPDFLoader, DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from typing import List
 from langchain.schema import Document
+from langchain.embeddings import HuggingFaceEmbeddings
 
 # Extract text fron PDF files
 def load_pdf_files(data):
